@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+:root {
+    --CorquasePreta: #111;
+    --CinzaFontes: #555;
+    --CorLinks: #fd8a24;
+    --CorBarras: #ff6b28;
+    --Fontes: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+* {
+    font-family: var(--Fontes);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--CorBarras);
+}
+
+.container-logo {
+    background: var(--CorBarras);
+    padding: 10px;
+}
+
+.logo {
+    width: 300px;
+}
+
+.bolo {
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 60vh;
+
+}
+
+main {
+    max-width: 780px;
+    margin: auto;
+}
+
+.main-title {
+    color: var(--CorLinks);
+    margin: 30px 0 70px -2px;
+    font-size: 42px;
+    font-family: var(--Fontes);
+    font-weight: 900;
+}
+
+.subtitles {
+    color: var(--CorLinks);
+    font-weight: 900;
+    text-transform: capitalize;
+    margin: 20px 0 ;
+    font-size: 28px;
+}
+
+ul {
+    margin: 0 0 0 25px;
+    list-style: inside;
+}
+
+li {
+    margin: 10px 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+li::first-letter {
+    text-transform: capitalize;
+}
+
+.stepback {
+    position: relative;
+    left: -13px;
+}
+
+.container-botao {
+    margin: 60px 35px;
+}
+
+.botao-comprar {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 22px;
+    background: var(--CorLinks);
+    padding: 20px;
+    text-decoration: none;
+}
+
+ol {
+    margin: 0 0 40px 25px;
+    list-style: inside;
+    list-style-type: decimal;
+}
+
+main>p {
+    margin: 40px 0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.first-main-paragraph {
+    margin: 10px 0;
+}
+
+footer {
+    background: var(--CorBarras);
+    margin: 0;
+}
+
+footer>p {
+    font-size: 24px;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
