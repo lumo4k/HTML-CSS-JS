@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    background: linear-gradient(to right, rgb(0, 115, 168), rgb(0, 174, 255));
+}
+
+.calculadora {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    /* border: 5px solid #f1f1f1;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2) ; */
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calculadora > .output {
+    grid-column: 1 / -1;
+    background: #aaa;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.calculadora > .output > .operador-anterior {
+    color: #333;
+    font-size: 20px;
+}
+
+.calculadora > .output > .operador-atual {
+    color: #000;
+    font-size: 32px;
+}
+
+.calculadora > button {
+    cursor: pointer;
+    font-size: 2rem;
+    outline: none;
+    background: #f1f1f1;
+    color: #000;
+}
+
+.calculadora > button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.calculadora > .operadores {
+    background: rgb(0, 255, 200);
+}
+
+.ac {
+    grid-column: span 2;
+}
+
+.calculadora > .output {
+    grid-column: 1 / -1;
+}
+
